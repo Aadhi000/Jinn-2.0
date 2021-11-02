@@ -91,10 +91,8 @@ def get_reply_markup(query):
     buttons = [[
         InlineKeyboardButton('Support Group', url='t.me/Mo_Tech_Group'),
         InlineKeyboardButton('More Botz', url='t.me/MT_Botz')
-        ],[
-        InlineKeyboardButton('🖥️ Deploy Video 🖥️', url=f'{TUTORIAL}')
-        ],[
-        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
+        ],[  
+        InlineKeyboardButton('💞 Search again 💞', switch_inline_query_current_chat=query)
         ]]
     return InlineKeyboardMarkup(buttons)
 
