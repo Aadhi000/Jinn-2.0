@@ -46,7 +46,7 @@ async def answer(bot, query):
             except Exception as e:
                 print(e)
                 f_caption=f_caption
-        if f_caption is None:
+        if f_caption :
             f_caption = f"{file.file_name}"
         results.append(
             InlineQueryResultCachedDocument(
