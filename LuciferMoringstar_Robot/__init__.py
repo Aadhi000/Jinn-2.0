@@ -17,7 +17,7 @@ HELP = """
 ➥ /about : About Me
 ➥ /stats user Status
 
-<b><u>Bot Owner Only</u></b>
+<b><u>For Bot Owner</u></b>
 
 ➥ /broadcast Replay Any Message or Media
 ➥ /ban_user  click ban_user more info
@@ -27,15 +27,14 @@ HELP = """
 ➥ /logger  Get Logs
 ➥ /delete Delete File From Database
 
-<b>[➡️How To Add Old Files For database](https://youtu.be/mtu5hgW-l_o)
+<b>[✨ Our Group ✨](https://t.me/LatestMoviesHub001)
 
-@Mo_Tech_YT></b>
+@BKC0001></b>
 """
 
 ABOUT = """
-➥ Name : Auto Filter With IMDB
-    
-➥ Credits : @LatestMoviesHub001
+➥ Name : 𝖏𝖎𝖓𝖓
+➥ Credits : [Bobin](t.me/BKC0001)
 
 ➥ Editing : [Aadhi](t.me/BKC0001)
 
@@ -43,5 +42,5 @@ ABOUT = """
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Source Code : [Click Me](https://t.me/LatestMoviesHub001)
+➥ Our Channel : [Latest Movies Hub](t.me/joinchat/9Mq2rjj9YDk0YmZh)
 """
