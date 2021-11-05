@@ -84,7 +84,7 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💝 Join Group 💝', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}')
                     ],
                     [
                         InlineKeyboardButton('♻️ Search again ♻️', switch_inline_query_current_chat='')
@@ -125,17 +125,17 @@ async def start(bot, message):
                             ),
                         InlineKeyboardButton
                             (
-                                "💝 Join Group 💝", url="https://t.me/LatestMoviesHub001"
+                                "💠 Join Group 💠", url="https://t.me/LatestMoviesHub001"
                             )
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "🤔Help", callback_data="help"
+                                "😁 Help 😁", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
-                                "About🤠", callback_data="about"
+                                "About✨", callback_data="about"
                             )
                     ]
                 ]
