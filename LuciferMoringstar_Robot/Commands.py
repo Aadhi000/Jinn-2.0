@@ -84,10 +84,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('♻️ Join Group ♻️', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('♻️ Search again ♻️', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔎 Search again 🔍', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -121,21 +121,21 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "🔎Search Here", switch_inline_query_current_chat=''
+                                "🔎 Search Here 🔍", switch_inline_query_current_chat=''
                             ),
                         InlineKeyboardButton
                             (
-                                "💠 Join Group 💠", url="https://t.me/LatestMoviesHub001"
+                                "♻️ Join Group ♻️", url="https://t.me/LatestMoviesHub001"
                             )
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "😁 Help 😁", callback_data="help"
+                                "💝 Help 💝", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
-                                "About✨", callback_data="about"
+                                "💝 About 💝", callback_data="about"
                             )
                     ]
                 ]
@@ -348,7 +348,7 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     'Video', url=f'{TUTORIAL}'
+                     '♻️ GROUP ♻️', url=f'{TUTORIAL}'
                 )
         ]
     ]
