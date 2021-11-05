@@ -29,7 +29,7 @@ HELP = """
 
 <b>[✨ Our Group ✨](https://t.me/LatestMoviesHub001)
 
-@BKC0001></b>
+@BKC0001</b>
 """
 
 ABOUT = """
