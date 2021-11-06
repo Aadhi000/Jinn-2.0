@@ -30,7 +30,7 @@ async def index_files(bot, message):
                 await last_msg.reply_text(f"This Is An Invalid Message, Either the channel is private and bot is not an admin in the forwarded chat, or you forwarded message as copy.\nError caused Due to <code>{e}</code>")
                 continue
 
-        msg = await message.reply('Checking....⏳')
+        msg = await message.reply('𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴....⏳😜')
         total_files = 0
         async with lock:
             try:
@@ -77,7 +77,7 @@ async def index_files(bot, message):
                 logger.exception(e)
                 await msg.edit(f'Error: {e}')
             else:
-                await msg.edit(f'Total {total_files} Saved To DataBase!')
+                await msg.edit(f'Total {total_files} Saved To DataBase..🛰')
 
 RATING = ["5.1 | IMDB", "6.2 | IMDB", "7.3 | IMDB", "8.4 | IMDB", "9.5 | IMDB", ]
 GENRES = ["fun, fact",
