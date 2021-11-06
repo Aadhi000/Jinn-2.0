@@ -49,10 +49,10 @@ async def start(bot, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("📢 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 𝗧𝗿𝘆 𝗔𝗴𝗮𝗶𝗻", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -84,10 +84,10 @@ async def start(bot, message):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♻️ Join Group ♻️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️', url=f'{TUTORIAL}')
                     ],
                     [
-                        InlineKeyboardButton('🔎 Search again 🔍', switch_inline_query_current_chat='')
+                        InlineKeyboardButton(' 💠𝗦𝗲𝗮𝗿𝗰𝗵 𝗔𝗴𝗮𝗶𝗻 💠', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -106,7 +106,7 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("📢 𝗝𝗼𝗶𝗻 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 📢", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -121,21 +121,21 @@ async def start(bot, message):
                     [
                         InlineKeyboardButton
                             (
-                                "🔎 Search Here 🔍", switch_inline_query_current_chat=''
+                                "🔎 𝗦𝗲𝗮𝗿𝗰𝗵 𝗛𝗲𝗿𝗲", switch_inline_query_current_chat=''
                             ),
                         InlineKeyboardButton
                             (
-                                "♻️ Join Group ♻️", url="https://t.me/LatestMoviesHub001"
+                                "♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️", url="https://t.me/LatestMoviesHub001"
                             )
                     ],
                     [
                         InlineKeyboardButton
                             (
-                                "💝 Help 💝", callback_data="help"
+                                "✨ 𝗛𝗲𝗹𝗽 ✨", callback_data="help"
                             ),
                         InlineKeyboardButton
                             (
-                                "💝 About 💝", callback_data="about"
+                                "𝗔𝗯𝗼𝘂𝘁 🚩", callback_data="about"
                             )
                     ]
                 ]
@@ -297,7 +297,7 @@ async def _banned_usrs(c, m):
 @Client.on_message(filters.command('total') & filters.user(ADMINS))
 async def total(bot, message):
     """Show total files in database"""
-    msg = await message.reply("Checking....🗳", quote=True)
+    msg = await message.reply("𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴....🗳", quote=True)
     try:
         total = await Media.count_documents()
         await msg.edit(f'🗄 Saved files: {total}')
@@ -320,7 +320,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Checking....🗳", quote=True)
+        msg = await message.reply("𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴....🗳", quote=True)
     else:
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
@@ -348,7 +348,7 @@ async def bot_info(bot, message):
         [
             InlineKeyboardButton
                 (
-                     '♻️ GROUP ♻️', url=f'{TUTORIAL}'
+                     '♻️ 𝗚𝗥𝗢𝗨𝗣 ♻️', url=f'{TUTORIAL}'
                 )
         ]
     ]
