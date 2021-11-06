@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ Title:** {search}\n**⭐ Rating:** {random.choice(RATING)}\n**🎭 Genre:** {random.choice(GENRES)}\n**📤 Uploaded by {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ 𝗧𝗶𝘁𝗹𝗲:** {search}\n**⭐ 𝗥𝗮𝘁𝗶𝗻𝗴:** {random.choice(RATING)}\n**🎭 𝗚𝗲𝗻𝗿𝗲:** {random.choice(GENRES)}\n**📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -133,7 +133,7 @@ async def group(client, message):
             LuciferMoringstar=await client.send_message(
             chat_id = message.chat.id,
             text=f"""
-𝗛𝗲𝘆..❤‍🔥 <{message.from_user.mention}
+𝗛𝗲𝘆..❤‍🔥 {message.from_user.mention}
 𝗜𝗳 𝘁𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗶𝗻 𝗼𝘂𝗿 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗻𝗼𝘁 𝗴𝗲𝘁 𝘁𝗵𝗮𝘁 𝗺𝗼𝘃𝗶𝗲..
 𝗢𝘁𝗵𝗲𝗿𝘄𝗶𝘀𝗲, 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗺𝗮𝘆 𝗻𝗼𝘁 𝗯𝗲 𝗰𝗼𝗿𝗿𝗲𝗰𝘁...
 𝗦𝗼 𝘆𝗼𝘂 𝗴𝗼 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁.
@@ -280,7 +280,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 Pages {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -289,18 +289,18 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 return
         elif query.data == "help":
             buttons = [[
-                InlineKeyboardButton('💠 Join Channel 💠', url='t.me/LatestMoviesHub001'),
-                InlineKeyboardButton('💞 Dev 💞', url="https://t.me/BKC0001")
+                InlineKeyboardButton('💠 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💠', url='t.me/LatestMoviesHub001'),
+                InlineKeyboardButton('💞 𝗗𝗲𝘃 💞', url="https://t.me/BKC0001")
                 ],[
-                InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}')
+                InlineKeyboardButton('💠 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 💠', url=f'{TUTORIAL}')
                 ]]
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('♻️ Join Channel ♻️', url='t.me/joinchat/9Mq2rjj9YDk0YmZh'),
-                    InlineKeyboardButton('♻️ Join Group ♻️', url=f'{TUTORIAL}')
+                    InlineKeyboardButton('♻️ 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ♻️', url='t.me/joinchat/9Mq2rjj9YDk0YmZh'),
+                    InlineKeyboardButton('♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️', url=f'{TUTORIAL}')
                 ]
                 ]
             await query.message.edit(text=f"{ABOUT}".format(TUTORIAL), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
@@ -323,11 +323,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}'),
-                        InlineKeyboardButton('♻️ Search Again ♻️', switch_inline_query_current_chat=query)
+                        InlineKeyboardButton('💠 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 💠', url=f'{TUTORIAL}')
                     ]
                     ]
-
+                
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
@@ -337,7 +336,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("Don't Try To Fool Me, Go And Join The Group",show_alert=True)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -355,8 +354,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}'),
-                        InlineKeyboardButton('♻️ Search Again ♻️', switch_inline_query_current_chat=query)
+                        InlineKeyboardButton('💠 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 💠', url=f'{TUTORIAL}')
                     ]
                     ]
                 
