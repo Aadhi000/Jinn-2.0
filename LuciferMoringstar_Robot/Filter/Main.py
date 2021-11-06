@@ -327,6 +327,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton('♻️ Search Again ♻️', switch_inline_query_current_chat=query)
                     ]
                     ]
+
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
@@ -355,6 +356,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = [
                     [
                         InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('♻️ Search Again ♻️', switch_inline_query_current_chat=query)
                     ]
                     ]
                 
