@@ -28,20 +28,19 @@ HELP = """
 ➥ /delete Delete File From Database
 
 <b>[✨ Our Group ✨](https://t.me/LatestMoviesHub001)
-
-@BKC0001</b>
+✴️</b>
 """
 
 ABOUT = """
 ➥ Name : [𝖏𝖎𝖓𝖓](t.me/GD001_Bot)
 
-➥ Credits : [Bobin](t.me/BKC0001)
+➥ Credits : [𝗕𝗼𝗯𝗶𝗻](t.me/BKC0001)
 
-➥ Editing : [Aadhi](t.me/BKC0001)
+➥ Editing : [𝗔𝗮𝗱𝗵𝗶](t.me/BKC0001)
 
 ➥ Language : Python3
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Our Channel : [Latest Movies Hub](t.me/joinchat/9Mq2rjj9YDk0YmZh)
+➥ Our Channel : [𝗟𝗮𝘁𝗲𝘀𝘁 𝗠𝗼𝘃𝗶𝗲𝘀 𝗛𝘂𝗯](t.me/joinchat/9Mq2rjj9YDk0YmZh)
 """
