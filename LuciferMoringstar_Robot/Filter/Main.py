@@ -323,10 +323,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('💠 Join Group 💠', url=f'{TUTORIAL}'),
+                        InlineKeyboardButton('♻️ Search Again ♻️', switch_inline_query_current_chat=query)
                     ]
                     ]
-                
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
