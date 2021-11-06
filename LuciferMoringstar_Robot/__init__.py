@@ -33,7 +33,7 @@ HELP = """
 """
 
 ABOUT = """
-➥ Name : 𝖏𝖎𝖓𝖓
+➥ Name : [𝖏𝖎𝖓𝖓](t.me/GD001_Bot)
 
 ➥ Credits : [Bobin](t.me/BKC0001)
 
