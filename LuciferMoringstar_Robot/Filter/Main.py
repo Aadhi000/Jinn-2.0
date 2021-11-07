@@ -53,7 +53,7 @@ async def filter(client, message):
     if 2 < len(message.text) < 100:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ 𝗧𝗶𝘁𝗹𝗲:** {search}\n**🌟 𝗥𝗮𝘁𝗶𝗻𝗴:** {random.choice(RATING)}\n**🎭 𝗚𝗲𝗻𝗿𝗲:** {random.choice(GENRES)}\n**📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ 𝗧𝗶𝘁𝗹𝗲:** {search}\n**🌟 𝗥𝗮𝘁𝗶𝗻𝗴:** {random.choice(RATING)}\n**🎭 𝗚𝗲𝗻𝗿𝗲:** {random.choice(GENRES)}\n**📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆: {message.chat.title}**"
         files = await get_filter_results(query=search)
         if files:
             for file in files:
@@ -115,7 +115,7 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"**🗂️ 𝗧𝗶𝘁𝗹𝗲:** {search}\n**⭐ 𝗥𝗮𝘁𝗶𝗻𝗴:** {random.choice(RATING)}\n**🎭 𝗚𝗲𝗻𝗿𝗲:** {random.choice(GENRES)}\n**📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 {message.chat.title}**"
+        mo_tech_yt = f"**🗂️ 𝗧𝗶𝘁𝗹𝗲:** {search}\n**⭐ 𝗥𝗮𝘁𝗶𝗻𝗴:** {random.choice(RATING)}\n**🎭 𝗚𝗲𝗻𝗿𝗲:** {random.choice(GENRES)}\n**📤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆: {message.chat.title}**"
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -136,7 +136,7 @@ async def group(client, message):
 𝗛𝗲𝘆..❤‍🔥 <b>{message.from_user.mention}</b>
 𝗜𝗳 𝘁𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗶𝗻 𝗼𝘂𝗿 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗻𝗼𝘁 𝗴𝗲𝘁 𝘁𝗵𝗮𝘁 𝗺𝗼𝘃𝗶𝗲..
 𝗢𝘁𝗵𝗲𝗿𝘄𝗶𝘀𝗲, 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗺𝗮𝘆 𝗻𝗼𝘁 𝗯𝗲 𝗰𝗼𝗿𝗿𝗲𝗰𝘁...
-𝗦𝗼 𝘆𝗼𝘂 𝗴𝗼 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁.𝗢𝗿 𝗔𝘀𝗸 𝗠𝗲 ›› @BKC0001
+𝗦𝗼 𝘆𝗼𝘂 𝗴𝗼 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁.𝗢𝗿 𝗔𝘀𝗸 𝗠𝗲 ›› <b>@BKC0001</b>
 
 <b>ഈ സിനിമ ഞങ്ങളുടെ ഡാറ്റാബേസിൽ ഇല്ലെങ്കിൽ നിങ്ങൾക്ക് ഈ സിനിമ ലഭിക്കില്ല
 അല്ലെങ്കിൽ, അഭ്യർത്ഥിച്ച സിനിമയുടെ പേരിന്റെ അക്ഷരവിന്യാസം ശരിയായിരിക്കില്ല ...
