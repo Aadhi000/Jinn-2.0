@@ -79,7 +79,7 @@ async def filter(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 𝗣𝗮𝗴𝗲𝘀 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲𝘀 1/1",callback_data="pages")]
             )
             poster=None
             if API_KEY:
@@ -98,7 +98,7 @@ async def filter(client, message):
             [InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ⏩",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -158,7 +158,7 @@ async def group(client, message):
         else:
             buttons = btn
             buttons.append(
-                [InlineKeyboardButton(text="📃 𝗣𝗮𝗴𝗲𝘀 1/1",callback_data="pages")]
+                [InlineKeyboardButton(text="🌹 𝗣𝗮𝗴𝗲𝘀 1/1",callback_data="pages")]
             )
             poster=None
             if API_KEY:
@@ -176,7 +176,7 @@ async def group(client, message):
             [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
-            [InlineKeyboardButton(text=f"📃 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
+            [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
         )
         poster=None
         if API_KEY:
@@ -229,7 +229,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -243,7 +243,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -267,7 +267,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("𝗡𝗲𝘅𝘁 ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -281,7 +281,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(f"📃 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
+                    [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -337,7 +337,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒",show_alert=True)
+                await query.answer("<b>ഇത് ശരിയല്ല പോയി ശെരിക്കും Join Chey..🥺</b>",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -371,4 +371,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("😁 Bro നമുക്ക് വേണ്ടത് നാം തന്നെ കണ്ടെത്തണം 😁",show_alert=True)
+        await query.answer("😁 <b>Bro നമുക്ക് വേണ്ടത് നാം തന്നെ കണ്ടെത്തണം</b> 😁",show_alert=True)
