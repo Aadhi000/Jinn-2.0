@@ -95,7 +95,7 @@ async def filter(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="𝗡𝗲𝘅𝘁 ➡️",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
@@ -173,7 +173,7 @@ async def group(client, message):
         buttons = data['buttons'][0].copy()
 
         buttons.append(
-            [InlineKeyboardButton(text="NEXT ⏩",callback_data=f"next_0_{keyword}")]
+            [InlineKeyboardButton(text="NEXT ➡️",callback_data=f"next_0_{keyword}")]
         )    
         buttons.append(
             [InlineKeyboardButton(text=f"🌹 𝗣𝗮𝗴𝗲𝘀 1/{data['total']}",callback_data="pages")]
@@ -226,7 +226,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -240,7 +240,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -264,7 +264,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("𝗡𝗲𝘅𝘁 ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
@@ -278,7 +278,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⏪ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
