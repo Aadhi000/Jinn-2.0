@@ -118,10 +118,10 @@ async def group(client, message):
     if 2 < len(message.text) < 50:    
         btn = []
         search = message.text
-        mo_tech_yt = f"""<b>📽 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲  : {movie_info['title']}</b>
+        mo_tech_yt = f"""<b>📽 Movie Name  : {movie_info['title']}</b>
 
-<b>⏱️ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : {movie_info['duration']}</b>
-<b>🌟 𝗜𝗠𝗗𝗯 𝗥𝗮𝘁𝗶𝗻𝗴 : {movie_info['imdb_rating']}/10</b>
+<b>⏱️ Runtime : {movie_info['duration']}</b>
+<b>🌟 IMDB Rating : {movie_info['imdb_rating']}/10</b>
 
 📧 𝗩𝗼𝘁𝗲𝘀 : <b>{movie_info['votes']}</b>
 📆 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 : <b>{movie_info['release']}</b>
