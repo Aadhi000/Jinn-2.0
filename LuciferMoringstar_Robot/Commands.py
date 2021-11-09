@@ -113,30 +113,25 @@ async def start(bot, message):
         )
     else:
         await message.reply_text(
-            START_MSG.format(message.from_user.first_name),
+            START_MSG.format (message.from_user.first_name),
             parse_mode="Markdown",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton
-                            (
-                                "🔎 𝗦𝗲𝗮𝗿𝗰𝗵 𝗛𝗲𝗿𝗲", switch_inline_query_current_chat=''
-                            ),
-                        InlineKeyboardButton
-                            (
-                                "♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️", url="https://t.me/LatestMoviesHub001"
-                            )
-                    ],
+                        InlineKeyboardButton("⚜️ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁𝘀 ⚜️", url="https://t.me/GD001_Bot?startgroup=botstart")
+                    ],  
                     [
-                        InlineKeyboardButton
-                            (
-                                "✨ 𝗛𝗲𝗹𝗽 ✨", callback_data="help"
-                            ),
-                        InlineKeyboardButton
-                            (
-                                "𝗔𝗯𝗼𝘂𝘁 🚩", callback_data="about"
-                            )
+                        InlineKeyboardButton("💞 𝗗𝗲𝘃 💞", url="https://t.me/BKC0001"),
+                        InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁 🚩", callback_data="about")
+                    ],  
+                    [
+                        InlineKeyboardButton("♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️", url="https://t.me/LatestMoviesHub001"),
+                        InlineKeyboardButton("♻️ 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ♻️", url="https://t.me/joinchat/9Mq2rjj9YDk0YmZh")
+                    ],  
+                    [
+                        InlineKeyboardButton("💠 𝗦𝗲𝗮𝗿𝗰𝗵 𝗛𝗲𝗿𝗲 💠", switch_inline_query_current_chat='')
+                            
                     ]
                 ]
             )
@@ -187,7 +182,7 @@ async def broadcast_handler_open(_, m):
 @Client.on_message(filters.private & filters.command("stats"))
 async def sts(c, m):
     await m.reply_text(
-        text=f"**Total Users in Database 📂:** `{await db.total_users_count()}``",
+        text=f"**𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿𝘀 𝗜𝗻 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 📂:** `{await db.total_users_count()}``",
         parse_mode="Markdown",
         quote=True
     )
@@ -247,7 +242,7 @@ async def unban(c, m):
 
     try:
         user_id = int(m.command[1])
-        unban_log_text = f"Unbanning user 🤪 {user_id}"
+        unban_log_text = f"𝗨𝗻𝗯𝗮𝗻𝗻𝗶𝗻𝗴.....🤪 {user_id}"
 
         try:
             await c.send_message(user_id, f"Your ban was lifted!")
@@ -300,7 +295,7 @@ async def total(bot, message):
     msg = await message.reply("𝗖𝗵𝗲𝗰𝗸𝗶𝗻𝗴....🗳", quote=True)
     try:
         total = await Media.count_documents()
-        await msg.edit(f'🗄 Saved files: {total}')
+        await msg.edit(f'🗄 Saved Files: {total}')
     except Exception as e:
         logger.exception('Failed to check total files')
         await msg.edit(f'Error: {e}')
