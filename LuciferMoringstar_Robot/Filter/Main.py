@@ -120,21 +120,20 @@ async def group(client, message):
         search = message.text
         mo_tech_yt = f"""<b>📽 𝗠𝗼𝘃𝗶𝗲 𝗡𝗮𝗺𝗲  : {movie_info['title']}</b>
 
-<b>⌚️ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : {movie_info['duration']}</b>
-
+<b>⏱️ 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : {movie_info['duration']}</b>
 <b>🌟 𝗜𝗠𝗗𝗯 𝗥𝗮𝘁𝗶𝗻𝗴 : {movie_info['imdb_rating']}/10</b>
 
 📧 𝗩𝗼𝘁𝗲𝘀 : <b>{movie_info['votes']}</b>
 📆 𝗥𝗲𝗹𝗲𝗮𝘀𝗲 : <b>{movie_info['release']}</b>
 🎞️ 𝗚𝗲𝗻𝗿𝗲 : <b>{movie_info['genre']}</b>
-🗣️ 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀 : <b>{movie_info['language']}</b>
-👨‍🎤 𝗖𝗮𝘀𝘁 : <b>{movie_info['actors']}</b>
-🌐 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 : <b>{movie_info['country']}</b>
+🔊 𝗟𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀 : <b>{movie_info['language']}</b>
+👩🏻‍💻 𝗖𝗮𝘀𝘁 : <b>{movie_info['actors']}</b>
+🏞️ 𝗖𝗼𝘂𝗻𝘁𝗿𝘆 : <b>{movie_info['country']}</b>
 🎬 𝗗𝗶𝗿𝗲𝗰𝘁𝗼𝗿 : <b>{movie_info['director']}</b>
 📝 𝗪𝗿𝗶𝘁𝗲𝗿 : <b>{movie_info['writer']}</b>
 
 
-📜 **Plot** : <code>{movie_info['plot']}</code>"""
+📜 **Plot** : <code><b>{movie_info['plot']}</b></code>"""
         nyva=BOT.get("username")
         if not nyva:
             botusername=await client.get_me()
@@ -152,8 +151,7 @@ async def group(client, message):
             LuciferMoringstar=await client.send_video(
         chat_id=message.chat.id,
         video="https://telegra.ph/file/c2c0ff4b927dcc50e7922.mp4",
-        caption=f""""
-𝗛𝗲𝘆..❤‍🔥 <b>{message.from_user.mention}</b>
+        caption=f""""𝗛𝗲𝘆..❤‍🔥 <b>{message.from_user.mention}</b>
  𝘁𝗵𝗶𝘀 𝗺𝗼𝘃𝗶𝗲 𝗶𝘀 𝗻𝗼𝘁 𝗶𝗻 𝗼𝘂𝗿 𝗱𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝘆𝗼𝘂 𝘄𝗶𝗹𝗹 𝗻𝗼𝘁 𝗴𝗲𝘁 𝘁𝗵𝗮𝘁 𝗺𝗼𝘃𝗶𝗲..
 𝗢𝘁𝗵𝗲𝗿𝘄𝗶𝘀𝗲, 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗿𝗲𝗾𝘂𝗲𝘀𝘁𝗲𝗱 𝗺𝗼𝘃𝗶𝗲 𝗺𝗮𝘆 𝗻𝗼𝘁 𝗯𝗲 𝗰𝗼𝗿𝗿𝗲𝗰𝘁...
 𝗦𝗼 𝘆𝗼𝘂 𝗴𝗼 𝘁𝗼 𝗚𝗼𝗼𝗴𝗹𝗲 𝗮𝗻𝗱 𝗰𝗵𝗲𝗰𝗸 𝘁𝗵𝗲 𝘀𝗽𝗲𝗹𝗹𝗶𝗻𝗴 𝗼𝗳 𝘁𝗵𝗲 𝗻𝗮𝗺𝗲 𝗼𝗳 𝘁𝗵𝗲 𝗺𝗼𝘃𝗶𝗲 𝘆𝗼𝘂 𝘄𝗮𝗻𝘁.𝗢𝗿 𝗔𝘀𝗸 𝗠𝗲 ›› <b>@BKC0001</b>
