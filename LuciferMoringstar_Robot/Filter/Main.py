@@ -240,7 +240,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)+1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)+1}_{keyword}")]
+                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)+1}_{keyword}"),InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{int(index)+1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)+2}/{data['total']}", callback_data="pages")]
@@ -278,7 +278,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 buttons = data['buttons'][int(index)-1].copy()
 
                 buttons.append(
-                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("NEXT ⏩", callback_data=f"next_{int(index)-1}_{keyword}")]
+                    [InlineKeyboardButton("⬅️ 𝗕𝗮𝗰𝗸", callback_data=f"back_{int(index)-1}_{keyword}"),InlineKeyboardButton("𝗡𝗲𝘅𝘁 ➡️", callback_data=f"next_{int(index)-1}_{keyword}")]
                 )
                 buttons.append(
                     [InlineKeyboardButton(f"🌹 𝗣𝗮𝗴𝗲𝘀 {int(index)}/{data['total']}", callback_data="pages")]
@@ -337,7 +337,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("<b>ഇത് ശരിയല്ല പോയി ശെരിക്കും Join Chey..🥺</b>",show_alert=True)
+                await query.answer("ഇത് ശരിയല്ല പോയി ശെരിക്കും Join Chey..🥺",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -371,4 +371,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("😁 <b>Bro നമുക്ക് വേണ്ടത് നാം തന്നെ കണ്ടെത്തണം</b> 😁",show_alert=True)
+        await query.answer("😁 𝗛𝗲𝘆 𝗙𝗿𝗶𝗲𝗻𝗱,𝗣𝗹𝗲𝗮𝘀𝗲 𝗦𝗲𝗮𝗿𝗰𝗵 𝗬𝗼𝘂𝗿𝘀𝗲𝗹𝗳. 😁",show_alert=True)
