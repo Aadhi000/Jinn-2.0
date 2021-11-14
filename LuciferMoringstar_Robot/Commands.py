@@ -119,14 +119,14 @@ async def start(bot, message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("⚜️ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁𝘀 ⚜️", url="https://t.me/GD001_Bot?startgroup=botstart")
+                        InlineKeyboardButton("⚜️ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁𝘀 ⚜️", url="https://t.me/jinn0_Bot?startgroup=botstart")
                     ],  
                     [
                         InlineKeyboardButton("💞 𝗗𝗲𝘃 💞", url="https://t.me/BKC0001"),
                         InlineKeyboardButton("𝗔𝗯𝗼𝘂𝘁 🚩", callback_data="about")
                     ],  
                     [
-                        InlineKeyboardButton("♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️", url="https://t.me/MoviesWorlds001"),
+                        InlineKeyboardButton("♻️ 𝗝𝗼𝗶𝗻 𝗚𝗿𝗼𝘂𝗽 ♻️", url="https://t.me/joinchat/EqhXLhL3T1w4Zjc1"),
                         InlineKeyboardButton("♻️ 𝗝𝗼𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 ♻️", url="https://t.me/joinchat/9Mq2rjj9YDk0YmZh")
                     ],  
                     [
